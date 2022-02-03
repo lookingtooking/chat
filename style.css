@@ -1,0 +1,103 @@
+body {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.main {
+    width: 1440px;
+    margin: 20px auto;
+    display: flex;
+}
+
+.girl, .empty, .man, .pink, .blue {
+    height: fit-content;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+p {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 5px 0px 0px 0px;
+}
+
+span {
+    font-size: 14px;
+    color: grey;
+    margin: 0px;
+    margin-left: 20px;
+}
+
+.girl {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(assets/avatar_2.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.pink, .blue {
+    padding: 16px 10px;
+}
+
+.pink {
+    background-color: pink;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.blue {
+    background-color: rgb(145, 196, 245);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.man {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(assets/avatar_1.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.man p {
+    margin-left: 60px;
+}
+
+.man span {
+    margin-left: 62px;
+}
+
+.column:nth-of-type(1) {
+    align-items: flex-end;
+    flex-basis: 25%;
+    gap: 71px;
+    margin-top: 2px;
+}
+
+.column:nth-of-type(2) {
+    flex-basis: 42%;
+    gap: 10px;
+}
+
+.column:nth-of-type(3) {
+    margin-top: 60px;
+    align-items: flex-start;
+    flex-basis: 25%;
+    gap: 70px;
+}
